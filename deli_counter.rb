@@ -16,7 +16,9 @@ def line(katz_deli)
 end
 
 def now_serving(katz_deli)
-  puts ""
-  puts #calls the first person and removes him from the line
-  # when no people puts "There is nobody waiting to be served!"
+  if katz_deli.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{katz_deli[0].shift}"
+  end
 end
