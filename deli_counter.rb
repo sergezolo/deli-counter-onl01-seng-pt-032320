@@ -5,7 +5,8 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.index(name) + 1} in line." 
 end
 
-def line(name)
+def line(katz_deli)
+  
   katz_deli.each_with_id do |name, order|
   puts "The line is currently: #{order}. #{name}"
   #if no people puts "The line is currently empty."
