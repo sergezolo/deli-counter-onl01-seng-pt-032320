@@ -6,11 +6,12 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
+  new_array = []
   katz_deli.each_with_index do |name, index|
-  puts "The line is currently: #{index}. #{name}"
+    new_array << "#{index + 1}. #{name}"
+  end
+  return "The line is currently: #{new_array.join(" ")}" 
 end
-
-
 
 def now_serving()
   puts #calls the first person and removes him from the line
