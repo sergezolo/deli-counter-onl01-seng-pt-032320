@@ -6,11 +6,13 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
-  new_array = []
-  katz_deli.each_with_index do |name, index|
-    new_array << "#{index + 1}. #{name}"
-  end
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  else
+    new_array = []
+    katz_deli.each_with_index {|name, index| new_array << "#{index + 1}. #{name}"}
   return "The line is currently: #{new_array.join(" ")}" 
+  end
 end
 
 def now_serving()
