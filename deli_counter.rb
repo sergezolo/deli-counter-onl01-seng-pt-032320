@@ -6,11 +6,8 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
-  
-  katz_deli.each_with_id do |name, order|
-  puts "The line is currently: #{order}. #{name}"
-  #if no people puts "The line is currently empty."
-
+  katz_deli.each_with_index do |name, index|
+  puts "The line is currently: #{index}. #{name}"
 end
 
 
