@@ -11,7 +11,7 @@ def line(katz_deli)
   else
     new_array = []
     katz_deli.each_with_index {|name, index| new_array << "#{index + 1}. #{name}"}
-  return "The line is currently: #{new_array.join(" ")}" 
+  puts "The line is currently: #{new_array.join(" ")}" 
   end
 end
 
