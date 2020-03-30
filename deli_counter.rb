@@ -15,7 +15,8 @@ def line(katz_deli)
   end
 end
 
-def now_serving()
+def now_serving(katz_deli)
+  puts ""
   puts #calls the first person and removes him from the line
   # when no people puts "There is nobody waiting to be served!"
 end
